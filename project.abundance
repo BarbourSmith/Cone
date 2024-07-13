@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Min",
-            "ioValue": 1
+            "ioValue": 0.1
         },
         {
             "name": "Max",
@@ -79,7 +79,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 1
+                    "ioValue": 0.1
                 }
             ]
         },
@@ -104,7 +104,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 10
+                    "ioValue": 4.34
                 }
             ]
         },
@@ -154,23 +154,11 @@
                     "ioValue": 1
                 },
                 {
-                    "name": "T",
+                    "name": "m",
                     "ioValue": 1
                 },
                 {
                     "name": "a",
-                    "ioValue": 1
-                },
-                {
-                    "name": "n",
-                    "ioValue": 1
-                },
-                {
-                    "name": "A",
-                    "ioValue": 1
-                },
-                {
-                    "name": "m",
                     "ioValue": 1
                 },
                 {
@@ -179,6 +167,18 @@
                 },
                 {
                     "name": "h",
+                    "ioValue": 1
+                },
+                {
+                    "name": "T",
+                    "ioValue": 1
+                },
+                {
+                    "name": "n",
+                    "ioValue": 1
+                },
+                {
+                    "name": "A",
                     "ioValue": 1
                 }
             ],
