@@ -144,21 +144,45 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + y",
-            "x": 0.30423280423280424,
-            "y": 0.8105849582172702,
+            "name": "L*math.Tan(A)",
+            "x": 0.2724867724867725,
+            "y": 0.7938718662952646,
             "uniqueID": 1720830880089,
             "ioValues": [
                 {
-                    "name": "x",
+                    "name": "L",
                     "ioValue": 1
                 },
                 {
-                    "name": "y",
+                    "name": "T",
+                    "ioValue": 1
+                },
+                {
+                    "name": "a",
+                    "ioValue": 1
+                },
+                {
+                    "name": "n",
+                    "ioValue": 1
+                },
+                {
+                    "name": "A",
+                    "ioValue": 1
+                },
+                {
+                    "name": "m",
+                    "ioValue": 1
+                },
+                {
+                    "name": "t",
+                    "ioValue": 1
+                },
+                {
+                    "name": "h",
                     "ioValue": 1
                 }
             ],
-            "currentEquation": "x + y"
+            "currentEquation": "L*math.Tan(A)"
         }
     ],
     "allConnectors": [
