@@ -141,6 +141,24 @@
                 }
             ],
             "closedSelection": 0
+        },
+        {
+            "atomType": "Equation",
+            "name": "x + y",
+            "x": 0.30423280423280424,
+            "y": 0.8105849582172702,
+            "uniqueID": 1720830880089,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 1
+                },
+                {
+                    "name": "y",
+                    "ioValue": 1
+                }
+            ],
+            "currentEquation": "x + y"
         }
     ],
     "allConnectors": [
