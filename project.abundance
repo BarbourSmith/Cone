@@ -18,6 +18,7 @@
             "ioValue": 60
         }
     ],
+    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
         {
@@ -31,63 +32,69 @@
                     "name": "number or geometry",
                     "ioValue": 1720830823787
                 }
-            ]
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Input",
             "name": "Min",
-            "x": 0.013333333333333334,
+            "x": 0.04,
             "y": 0.31197771587743733,
             "uniqueID": 1720830758174,
-            "ioValues": []
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
         },
         {
             "atomType": "Input",
             "name": "Max",
-            "x": 0.013333333333333334,
+            "x": 0.04,
             "y": 0.5236768802228412,
             "uniqueID": 1720830774323,
-            "ioValues": []
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
         },
         {
             "atomType": "Input",
             "name": "Angle",
-            "x": 0.013333333333333334,
+            "x": 0.04,
             "y": 0.6740947075208913,
             "uniqueID": 1720830782009,
-            "ioValues": []
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
         },
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.17923280423280424,
-            "y": 0.5515320334261838,
+            "x": 0.22420634920634921,
+            "y": 0.5236768802228412,
             "uniqueID": 1720830791507,
             "ioValues": [
                 {
                     "name": "diameter",
                     "ioValue": 10
                 }
-            ]
+            ],
+            "description": "Creates a new circle."
         },
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.1607142857142857,
-            "y": 0.30919220055710306,
+            "x": 0.20105820105820105,
+            "y": 0.2479108635097493,
             "uniqueID": 1720830797481,
             "ioValues": [
                 {
                     "name": "diameter",
                     "ioValue": 0.1
                 }
-            ]
+            ],
+            "description": "Creates a new circle."
         },
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.30158730158730157,
-            "y": 0.23119777158774377,
+            "x": 0.4801587301587301,
+            "y": 0.2256267409470752,
             "uniqueID": 1720830808011,
             "ioValues": [
                 {
@@ -106,13 +113,14 @@
                     "name": "zDist",
                     "ioValue": 4.34
                 }
-            ]
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         },
         {
             "atomType": "Loft",
             "name": "Loft",
-            "x": 0.43187830687830686,
-            "y": 0.42896935933147634,
+            "x": 0.6302910052910052,
+            "y": 0.3816155988857939,
             "uniqueID": 1720830823787,
             "ioValues": [
                 {
@@ -140,13 +148,14 @@
                     "ioValue": ""
                 }
             ],
+            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
             "closedSelection": 0
         },
         {
             "atomType": "Equation",
             "name": "L*math.Tan(A)",
-            "x": 0.3062169312169312,
-            "y": 0.7520891364902507,
+            "x": 0.22619047619047616,
+            "y": 0.7688022284122563,
             "uniqueID": 1720830880089,
             "ioValues": [
                 {
@@ -182,13 +191,14 @@
                     "ioValue": 1
                 }
             ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "L*math.Tan(A)"
         },
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.208994708994709,
-            "y": 0.83008356545961,
+            "x": 0.30224867724867727,
+            "y": 0.796657381615599,
             "uniqueID": 1720831313806,
             "ioValues": [
                 {
@@ -200,8 +210,55 @@
                     "ioValue": 10
                 }
             ],
+            "description": "Defines a Replicad code block.",
             "codeVersion": 1,
             "code": "//Inputs:[input1, height];\n\nlet shape = drawRectangle(5,7)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return { geometry: [shape.sketchOnPlane(newPlane).extrude(7)], tags: [],\n      color: '#A3CE5B',\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return 25;\n\n      - See more examples at _______ \n\n\n    */\n"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.7123015873015873,
+            "y": 0.7604456824512534,
+            "uniqueID": 1734742245911,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1720830823787
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.5165343915343915,
+            "y": 0.7799442896935932,
+            "uniqueID": 1734742254045,
+            "ioValues": [
+                {
+                    "name": "input1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Defines a Replicad code block.",
+            "codeVersion": 1,
+            "code": "//Inputs:[input1, height];\n\nlet shape = drawRectangle(5,7)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return 100;\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
         }
     ],
     "allConnectors": [
@@ -246,6 +303,20 @@
             "ap2Primary": false,
             "ap1ID": 1720830823787,
             "ap2ID": 1720830750358
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1720830823787,
+            "ap2ID": 1734742245911
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 1734742254045,
+            "ap2ID": 1734742245911
         }
     ],
     "unitsKey": "MM",
